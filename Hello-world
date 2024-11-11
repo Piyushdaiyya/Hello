@@ -1,2 +1,15 @@
-Hello World
-Its Piyush Daiyya
+def manipulator(list):
+    newlist = []
+
+    arr = []
+    for i in range(0,len(list)):
+        newlist.append(list[i])
+    for i in range(len(list)):
+        temp = 1
+        for j in range(len(list)):
+            if i!= j:
+                temp *= list[j]
+        arr.append(temp)
+    return arr
+list = [1,2,3,4]
+print(manipulator(list))
